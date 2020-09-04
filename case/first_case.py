@@ -31,7 +31,7 @@ class FirstCase:
 
 if __name__ == '__main__':
     driver = webdriver.Chrome()
-    url = '????????'
+    url = 'http://scm.gyl.test.9now.net/login.html'
     driver.get(url)
     driver.maximize_window()
     sleep(3)
