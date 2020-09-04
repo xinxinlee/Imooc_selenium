@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c5581a1-545d-414d-b55d-7b4668da951c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case/unittest_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Imooc_selenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Imooc_selenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/first_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/first_case.py" afterDir="false" />
-    </list>
+    <list default="true" id="1c5581a1-545d-414d-b55d-7b4668da951c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +264,7 @@
       <workItem from="1599014438322" duration="11244000" />
       <workItem from="1599096746036" duration="17280000" />
       <workItem from="1599183360238" duration="10905000" />
-      <workItem from="1599202946759" duration="3816000" />
+      <workItem from="1599202946759" duration="4087000" />
     </task>
     <servers />
   </component>
@@ -282,12 +277,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91214000" />
+    <option name="totallyTimeSpent" value="91485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -298,7 +293,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" visible="true" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
