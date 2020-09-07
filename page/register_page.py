@@ -21,6 +21,6 @@ class RegisterPage:
     def get_button_element(self):
         return self.fd.get_element('login_button')
 
-    def get_code_erroe_element(self):
-        return self.fd.get_element('code_erroe')
+    def get_alert_tips_element(self):
+        return self.fd.get_element('alert_tips')
 

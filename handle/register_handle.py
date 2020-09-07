@@ -22,6 +22,6 @@ class RegisterHandle:
     def click_button(self):
         return self.register_p.get_button_element().click()
 
-    def catch_error(self):
-        return self.register_p.get_code_erroe_element()
+    def alert_tips(self):
+        return self.register_p.get_alert_tips_element()
 

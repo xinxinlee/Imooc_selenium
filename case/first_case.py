@@ -18,25 +18,18 @@ class FirstCase(unittest.TestCase):
         self.driver.close()
 
     # 如果用户名输入错误的时候的用例,直接把参数传给login方法，不需要传给test函数
-    def test_login_shopname_error(self):
+    def test_1_login_succes(self):
         res = self.login.login('99999','admin','123456','8888')
         #调用上面的函数后会有返回，使用assert 来判断返回的是不是error
-        if res == True:
-            print("成功了")
-        else:
-            print("失败了")
+        return res
 
-    def t1est_login_username_error(self):
-        self.login.login()
+    def test_2_login_emptypara(self):
+        res = self.login.login('','','','')
+        return res
 
-    def t1est_login_password_error(self):
-        self.login.login()
-
-    def t1est_login_code_error(self):
-        self.login.login()
-
-    def t1est_login_success(self):
-        self.login.login()
+    def test_3_login_erroeshopname(self):
+        res = self.login.login('9999','admin','123456','8888')
+        return res
 
 if __name__ == '__main__':
     unittest.main()
