@@ -1,10 +1,11 @@
 import unittest
 
 class FirstCase01(unittest.TestCase):
-
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
         print('前置')
-    def tearDown(self):
+    @classmethod
+    def tearDownClass(cls):
         print('后置')
     def test_first01(self):
         print("test01")

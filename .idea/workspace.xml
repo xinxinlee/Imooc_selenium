@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c5581a1-545d-414d-b55d-7b4668da951c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/register_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/register_business.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/first_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/first_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/LocalElement.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/LocalElement.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/register_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/register_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/register_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/unittest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/unittest_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_browser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/unittest_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/first_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+            <state relative-caret-position="47">
+              <caret line="13" column="37" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -44,13 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/register_business.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/start_browser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="245">
+              <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,15 +95,15 @@
         <option value="$PROJECT_DIR$/util/read_ini.py" />
         <option value="$PROJECT_DIR$/find_element.py" />
         <option value="$PROJECT_DIR$/case/fister_case.py" />
-        <option value="$PROJECT_DIR$/start_browser.py" />
         <option value="$PROJECT_DIR$/register_fuction.py" />
-        <option value="$PROJECT_DIR$/case/unittest_case.py" />
         <option value="$PROJECT_DIR$/config/LocalElement.ini" />
         <option value="$PROJECT_DIR$/page/register_page.py" />
         <option value="$PROJECT_DIR$/handle/register_handle.py" />
         <option value="$PROJECT_DIR$/register_code.py" />
         <option value="$PROJECT_DIR$/business/register_business.py" />
+        <option value="$PROJECT_DIR$/case/unittest_case.py" />
         <option value="$PROJECT_DIR$/case/first_case.py" />
+        <option value="$PROJECT_DIR$/start_browser.py" />
       </list>
     </option>
   </component>
@@ -282,10 +287,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.first_case" />
+        <item itemvalue="Python tests.Unittests for unittest_case.FirstCase01" />
         <item itemvalue="Python.register_business" />
         <item itemvalue="Python.register_code" />
         <item itemvalue="Python.register_page" />
-        <item itemvalue="Python tests.Unittests for unittest_case.FirstCase01" />
       </list>
     </recent_temporary>
   </component>
@@ -315,8 +320,16 @@
       <workItem from="1599183360238" duration="10905000" />
       <workItem from="1599202946759" duration="6386000" />
       <workItem from="1599277187800" duration="6251000" />
-      <workItem from="1599463106235" duration="4657000" />
+      <workItem from="1599463106235" duration="7505000" />
     </task>
+    <task id="LOCAL-00001" summary="添加断言">
+      <created>1599468751042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599468751042</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -335,20 +348,23 @@
     <history-entry file="Unittests_for_unittest_case_FirstCase01 - 2020.09.05 at 14h 21m 31s.xml">
       <configuration name="Unittests for unittest_case.FirstCase01" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_unittest_case_FirstCase01 - 2020.09.07 at 17h 11m 41s.xml">
+      <configuration name="Unittests for unittest_case.FirstCase01" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104692000" />
+    <option name="totallyTimeSpent" value="107540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.23510467" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.4041868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5192926" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,16 +425,20 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加断言" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加断言" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Imooc_selenium$register_fuction.coverage" NAME="register_fuction Coverage Results" MODIFIED="1599191058821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$register_function.coverage" NAME="register_function Coverage Results" MODIFIED="1598862605764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$read_ini.coverage" NAME="read_ini Coverage Results" MODIFIED="1598867303477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$register_code.coverage" NAME="register_code Coverage Results" MODIFIED="1599465931186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$pytest_in_unittest_case_py.coverage" NAME="pytest in unittest_case.py Coverage Results" MODIFIED="1599208550100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/Imooc_selenium$Unittests_for_unittest_case_FirstCase01.coverage" NAME="Unittests for unittest_case.FirstCase01 Coverage Results" MODIFIED="1599286890404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$register_page.coverage" NAME="register_page Coverage Results" MODIFIED="1599465220382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/page" />
+    <SUITE FILE_PATH="coverage/Imooc_selenium$Unittests_for_unittest_case_FirstCase01.coverage" NAME="Unittests for unittest_case.FirstCase01 Coverage Results" MODIFIED="1599469900247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$find_element.coverage" NAME="find_element Coverage Results" MODIFIED="1598942408723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Imooc_selenium$first_case.coverage" NAME="first_case Coverage Results" MODIFIED="1599468324823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/Imooc_selenium$first_case.coverage" NAME="first_case Coverage Results" MODIFIED="1599470317364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$register_business.coverage" NAME="register_business Coverage Results" MODIFIED="1599466706932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/Imooc_selenium$start_browser.coverage" NAME="start_browser Coverage Results" MODIFIED="1598846252352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -476,33 +496,6 @@
     <entry file="file://$PROJECT_DIR$/Image/test2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/register_fuction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start_browser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/unittest_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/register_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -536,8 +529,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="285">
           <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register_fuction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -546,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/business/register_business.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="39">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -556,10 +559,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/first_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        <state relative-caret-position="47">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/unittest_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_browser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,10 +3,11 @@ from selenium import webdriver
 from time import sleep
 import unittest
 
+# 把登录的时候的测试用例都按照不同的方法写在下面，只需要调用函数，输入不同的参数来实现测试用例的执行
+# 这个部分只要输入测试用例设计的参数，然后判断一下busniess返回的结果是不是与预期相符就可以了
+# 要使用busniess的方法在初始化的时需要实例化对应的类，后面的调用方法直接用类操作即可
 class FirstCase(unittest.TestCase):
-    #把登录的时候的测试用例都按照不同的方法写在下面，只需要调用函数，输入不同的参数来实现测试用例的执行
-    #这个部分只要输入测试用例设计的参数，然后判断一下busniess返回的结果是不是与预期相符就可以了
-    #要使用busniess的方法在初始化的时需要实例化对应的类，后面的调用方法直接用类操作即可
+
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.get('http://scm.gyl.test.9now.net/login.html')

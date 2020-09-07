@@ -35,4 +35,19 @@ i = 0
 while i <5:
     a = ''.join(random.sample('1234567890abcdefg',5)) + "@163.com"#使用join这种方式是为了把LIST 转换为字符串
     i += 1
+#classmethod不一定适合所有的场景，需要没错都要重新充值和关闭一次的场景就不可以使用此方式，下面是classmethod方式的应用
+class FirstCase01(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print('前置')
+    @classmethod
+    def tearDownClass(cls):
+        print('后置')
+    def test_first01(self):
+        print("test01")
 
+    def test_first02(self):
+        print('test02')
+
+if __name__ == '__main__':
+    unittest.main()
