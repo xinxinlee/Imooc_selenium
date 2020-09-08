@@ -3,6 +3,7 @@ from page.register_page import RegisterPage
 #主要完成页面定位，等着输入sendkey 这个操作，就是说调用page的定位元素，然后handel 就负责send_key
 
 class RegisterHandle:
+
     def __init__(self,driver):
         self.register_p = RegisterPage(driver)
     #输入门店名称
@@ -17,8 +18,8 @@ class RegisterHandle:
     #输入验证码
     def seng_code(self,code):
         return self.register_p.get_code_element().send_keys(code)
-    #获取提交时错误的弹窗元素
 
+    #获取提交时错误的弹窗元素
     def click_button(self):
         return self.register_p.get_button_element().click()
 
