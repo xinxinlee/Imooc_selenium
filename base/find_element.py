@@ -20,7 +20,6 @@ class FindElement:
             else:
                 return self.driver.find_element_by_id(value)
         except:
-            self.driver.save_screenshot('D:\Imooc_selenium\Image\\%s.png' %value)
             return None
 
 
