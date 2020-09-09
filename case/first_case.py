@@ -19,7 +19,7 @@ class FirstCase(unittest.TestCase):
     def tearDown(self):
         #截图处理代码每次用例执行完毕后会在收尾处进行截图
         case_name = self._testMethodName#用例的名字
-        self.driver.save_screenshot('D:\Imooc_selenium\Image\\%s.png' % case_name)
+        self.driver.save_screenshot('D:\\Imooc_selenium\\Image\\%s.png' % case_name)
         self.driver.close()
 
     # 如果用户名输入错误的时候的用例,直接把参数传给login方法，不需要传给test函数

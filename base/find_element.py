@@ -6,7 +6,7 @@ class FindElement:
         self.driver = driver
 
     def get_element(self,key):
-        element_obj = ReadIni('D:\Imooc_selenium\config\LocalElement.ini','RegisterElement')
+        element_obj = ReadIni('D:\\Imooc_selenium\\config\\LocalElement.ini','RegisterElement')
         data = element_obj.get_value(key)
         by = data.split('>')[0]
         value = data.split('>')[1]
