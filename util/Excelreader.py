@@ -44,21 +44,23 @@ class ExcelDate:
 			print('获取测试用例数据失败，原因：%s'%e)
 
 	def for_ddtlist(self):
-		res = []
+		list_result = []
 		for i in range(1,self.nrows):
-			col = self.table.row_values(i)
-			for cell in col:
+			list1 = []
+			for j in range(self.ncols):
+				cell = self.table.cell(i, j).value
 				if type(cell) == float:
 					cell = int(cell)
-				col.append(cell)
-			res.append(col)
-		return res
+				list1.append(cell)
+			list_result.append(list1)
+		return list_result
+
+
 
 if __name__ == "__main__":
 	data_path = "D:\\Imooc_selenium\\config\\case.xlsx"
 	sheetname = "logincase"
 	get_data = ExcelDate(data_path,sheetname)
-	#datas = get_data.readExcel()
 	datas = get_data.for_ddtlist()
 	print(datas)
 
