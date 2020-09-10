@@ -1,6 +1,7 @@
 import xlrd
 from datetime import datetime
 from xlrd import xldate_as_tuple
+from xlutils import copy
 
 '''
 xlrd中单元格的数据类型
@@ -55,12 +56,11 @@ class ExcelDate:
 			list_result.append(list1)
 		return list_result
 
-
-
 if __name__ == "__main__":
 	data_path = "D:\\Imooc_selenium\\config\\case.xlsx"
 	sheetname = "logincase"
 	get_data = ExcelDate(data_path,sheetname)
 	datas = get_data.for_ddtlist()
 	print(datas)
+
 
