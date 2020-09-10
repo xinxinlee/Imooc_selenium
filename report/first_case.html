@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>this is first report</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-09-09 14:47:26</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:48.003201</p>
-<p class='attribute'><strong>结果:</strong> Pass 3</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-09-09 18:40:38</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:43.689000</p>
+<p class='attribute'><strong>结果:</strong> Pass 1 Error 2</p>
 
 <p class='description'>这是第一个测试报告</p>
 </div>
@@ -221,31 +221,63 @@ function showOutput(id, name) {
     <td>查看</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='errorClass'>
     <td>first_ddt.FirstDdtCase</td>
     <td>3</td>
-    <td>3</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
+    <td>2</td>
     <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_1___99999____admin____123456____8888__</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login_1__99999_0___admin___123456_0__8888_0_</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 
+ft1.1: Traceback (most recent call last):
+  File "D:\Python\Python36-32\lib\site-packages\ddt.py", line 184, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Imooc_selenium\case\first_ddt.py", line 30, in test_login
+    res = self.login.login(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 20, in login
+    self.user_base(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 13, in user_base
+    self.register_h.send_shopname(shopname)
+  File "D:\Imooc_selenium\handle\register_handle.py", line 11, in send_shopname
+    return self.register_p.get_shopname_element().send_keys(shopname)
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\common\utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+Traceback (most recent call last):
+  File "D:\Python\Python36-32\lib\site-packages\ddt.py", line 184, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Imooc_selenium\case\first_ddt.py", line 30, in test_login
+    res = self.login.login(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 20, in login
+    self.user_base(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 13, in user_base
+    self.register_h.send_shopname(shopname)
+  File "D:\Imooc_selenium\handle\register_handle.py", line 11, in send_shopname
+    return self.register_p.get_shopname_element().send_keys(shopname)
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\common\utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+
 
         </pre>
     </div>
@@ -278,22 +310,54 @@ pt1.2:
     </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_3___9999____admin____123456____8888__</div></td>
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login_3__9999_0___admin___123456_0__8888_0_</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
 
-    <div id='div_pt1.3' class="popup_window">
+    <div id='div_ft1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.3: 
+ft1.3: Traceback (most recent call last):
+  File "D:\Python\Python36-32\lib\site-packages\ddt.py", line 184, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Imooc_selenium\case\first_ddt.py", line 30, in test_login
+    res = self.login.login(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 20, in login
+    self.user_base(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 13, in user_base
+    self.register_h.send_shopname(shopname)
+  File "D:\Imooc_selenium\handle\register_handle.py", line 11, in send_shopname
+    return self.register_p.get_shopname_element().send_keys(shopname)
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\common\utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+Traceback (most recent call last):
+  File "D:\Python\Python36-32\lib\site-packages\ddt.py", line 184, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Imooc_selenium\case\first_ddt.py", line 30, in test_login
+    res = self.login.login(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 20, in login
+    self.user_base(shopname,username,password,code)
+  File "D:\Imooc_selenium\business\register_business.py", line 13, in user_base
+    self.register_h.send_shopname(shopname)
+  File "D:\Imooc_selenium\handle\register_handle.py", line 11, in send_shopname
+    return self.register_p.get_shopname_element().send_keys(shopname)
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "D:\Python\Python36-32\lib\site-packages\selenium\webdriver\common\utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+
 
         </pre>
     </div>
@@ -305,9 +369,9 @@ pt1.3:
 <tr id='total_row'>
     <td>总共</td>
     <td>3</td>
-    <td>3</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
+    <td>2</td>
     <td>&nbsp;</td>
 </tr>
 </table>

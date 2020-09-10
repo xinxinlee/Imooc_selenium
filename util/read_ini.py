@@ -16,7 +16,7 @@ class ReadIni:
 
 if __name__ == '__main__':
     file_name = ''
-    read_obj = ReadIni('D:\Imooc_selenium\config\LocalElement.ini','RegisterElement')
+    read_obj = ReadIni('D:\\Imooc_selenium\\config\\LocalElement.ini','RegisterElement')
     a = read_obj.get_value('shop_name')
     print(a)
 
