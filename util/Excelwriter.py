@@ -1,12 +1,5 @@
-import xlutils,xlwt
-from xlutils import copy
+from pandas import DataFrame
 
-#使用xlwt
-newfile = xlwt.Workbook()
-newsheet = newfile.add_sheet('test1',cell_overwrite_ok=True)
-newsheet.write(0,0,'aaa')
-#newsheet.write(0,0,10)
-newfile.save('D:\\Imooc_selenium\\config\\test1.xls')
-
-
-
+data={'name':['张三','李四','王五'],'age':[11,12,13],'sex':['男','女','男']}
+df=DataFrame(data)
+df.to_excel('D:\\Imooc_selenium\\config\\write_sheet.xlsx')
