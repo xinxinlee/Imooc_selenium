@@ -1,7 +1,7 @@
 import xlrd
 from datetime import datetime
 from xlrd import xldate_as_tuple
-from xlutils import copy
+from xlutils.copy import copy
 
 '''
 xlrd中单元格的数据类型
@@ -43,7 +43,7 @@ class ExcelDate:
 
 		except Exception as e:
 			print('获取测试用例数据失败，原因：%s'%e)
-
+#返回的形式是[[],[],[],...]
 	def for_ddtlist(self):
 		list_result = []
 		for i in range(1,self.nrows):
@@ -56,11 +56,30 @@ class ExcelDate:
 			list_result.append(list1)
 		return list_result
 
+	def get_lines(self):
+		rows = self.table.nrows
+		return rows
+
+	def get_col_value(self,row,col):
+		if self.get_lines()> row:
+			data = self.table.cell(row,col).value
+			return data
+		return None
+
+	def write_value(self,row,value):
+		read_value = self.data
+		write_data = copy(read_value)
+		write_data.get_sheet(0).write(row,7,value)
+		write_data.save('D:\\Imooc_selenium\\config\\keywords.xls')
+
+
 if __name__ == "__main__":
-	data_path = "D:\\Imooc_selenium\\config\\case.xlsx"
-	sheetname = "logincase"
+	data_path = "D:\\Imooc_selenium\\config\\keywords.xls"
+	sheetname = "Sheet1"
 	get_data = ExcelDate(data_path,sheetname)
-	datas = get_data.for_ddtlist()
+	#datas = get_data.for_ddtlist()
+	datas = get_data.get_col_value(0,3)
+	#datas = get_data.write_value(7,'test')
 	print(datas)
 
 
