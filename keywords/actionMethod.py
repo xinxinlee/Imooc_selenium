@@ -12,3 +12,6 @@ class ActionMethod:
         else:
             driver = webdriver.Edge()
         return driver
+
+    def get_url(self,url):
+        self.driver.get(url)
