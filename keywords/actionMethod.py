@@ -1,10 +1,12 @@
 from selenium import webdriver
 from base.find_element import FindElement
 from time import sleep
-
+#这个类是用来封装各种操作的，如打开关闭浏览器，获取元素，操作元素等一下动作
 class ActionMethod:
-    def __init__(self):
-        self.driver = self.get_driver()
+    def __init__(self,browser):
+        self.driver = self.get_driver(browser)
+        self.driver.maximize_window()
+
 
     def get_driver(self,browser):
         if browser == 'chrome':
@@ -38,7 +40,16 @@ class ActionMethod:
         self.driver.close()
 
 
-
-
+if __name__ == '__main__':
+    obj = ActionMethod('chrome')
+    obj.get_url('http://scm.gyl.test.9now.net/login.html')
+    obj.sleep_time(3)
+    obj.element_send_keys('shop_name','99999')
+    obj.element_send_keys('user_name', 'admin')
+    obj.element_send_keys('pass_word', '123456')
+    obj.element_send_keys('code', '8888')
+    obj.element_click('login_button')
+    obj.sleep_time(3)
+    obj.close_browser()
 
 

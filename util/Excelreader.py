@@ -65,6 +65,8 @@ class ExcelDate:
 	def get_col_value(self,row,col):
 		if self.get_lines()> row:
 			data = self.table.cell(row,col).value
+			if type(data) == float:
+				data = int(data)
 			return data
 		return None
 
@@ -80,9 +82,9 @@ if __name__ == "__main__":
 	sheetname = "Sheet1"
 	get_data = ExcelDate(data_path,sheetname)
 	#datas = get_data.for_ddtlist()
-	#datas = get_data.get_col_value(0,3)
+	datas = get_data.get_col_value(4,5)
 	#datas = get_data.write_value(7,'test')
-	datas = get_data.get_lines()
+	#datas = get_data.get_lines()
 	print(datas)
 
 
