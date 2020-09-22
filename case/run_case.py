@@ -1,4 +1,7 @@
-import unittest,HTMLTestRunner
+import unittest,HTMLTestRunner,os,sys
+p = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))
+if p not in sys.path:
+    sys.path.append(p)
 
 class RunCase(unittest.TestCase):
     def test_case01(self):
