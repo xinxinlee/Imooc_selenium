@@ -43,5 +43,5 @@ if __name__ == '__main__':
     text = alert_text.text
     print(text)
 
-    driver.close()
+    #driver.close()
     
