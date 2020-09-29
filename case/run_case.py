@@ -1,5 +1,5 @@
 import unittest,HTMLTestRunner,os,sys
-p = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))
+p = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))#添加当前路径，当在终端或者jenkins中执行此脚本时需要加载到本路径下的文件
 if p not in sys.path:
     sys.path.append(p)
 

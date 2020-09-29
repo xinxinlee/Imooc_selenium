@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c5581a1-545d-414d-b55d-7b4668da951c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case/first_caigoudan_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/test_login_1__99999___admin___123456__8888_.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/test_login_1__99999___admin___123456__8888_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/test_login_2_________________.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/test_login_2_________________.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/test_login_3__9999___admin___123456__8888_.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/test_login_3__9999___admin___123456__8888_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/logs/2020-09-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logs/2020-09-22.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/first_case.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/first_case.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/run_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/run_case.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +26,17 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case/run_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,18 +92,18 @@
         <option value="$PROJECT_DIR$/log/user_log.py" />
         <option value="$PROJECT_DIR$/log/logs/2020-09-21.log" />
         <option value="$PROJECT_DIR$/case/first_ddt.py" />
-        <option value="$PROJECT_DIR$/case/run_case.py" />
         <option value="$PROJECT_DIR$/case/first_caigoudan_case.py" />
         <option value="$PROJECT_DIR$/register_code.py" />
         <option value="$PROJECT_DIR$/case/date_test.py" />
+        <option value="$PROJECT_DIR$/case/run_case.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="643" />
-    <option name="y" value="112" />
-    <option name="width" value="1077" />
-    <option name="height" value="500" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -188,6 +192,7 @@
     <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/selenium-master/selenium-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -365,6 +370,8 @@
       <workItem from="1600682341664" duration="2026000" />
       <workItem from="1600739520728" duration="10594000" />
       <workItem from="1600831722196" duration="5095000" />
+      <workItem from="1601175461191" duration="1582000" />
+      <workItem from="1601343204403" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="添加断言">
       <created>1599468751042</created>
@@ -416,12 +423,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240162000" />
+    <option name="totallyTimeSpent" value="243801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30635402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31543118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -689,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/unittest_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Python36-32/Lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -711,13 +712,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/logs/2020-09-22.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/run_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start_browser.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -806,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/date_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case/fiirst_case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -854,6 +841,27 @@
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/unittest_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/date_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/run_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="64" />
         </state>
       </provider>
     </entry>
