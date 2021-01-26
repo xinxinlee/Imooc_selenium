@@ -1,9 +1,8 @@
 import requests
 import json
 
- 
- #封装采用json编码格式的请求
- 
+#封装采用json编码格式的请求
+
 class myrequests:
 
 	def __init__(self,url):
