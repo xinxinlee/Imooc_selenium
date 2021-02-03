@@ -67,7 +67,7 @@ class ExcelDate:
 			data = self.table.cell(row,col).value
 			if type(data) == float:
 				data = int(data)
-			return data
+			return str(data).strip()
 		return None
 
 	def write_value(self,row,value):
@@ -78,13 +78,20 @@ class ExcelDate:
 
 
 if __name__ == "__main__":
-	data_path = "D:\\Imooc_selenium\\config\\keywords.xls"
-	sheetname = "Sheet1"
+	data_path = "D:\\Imooc_selenium\\config\\case.xlsx"
+	sheetname = "logincase"
 	get_data = ExcelDate(data_path,sheetname)
 	#datas = get_data.for_ddtlist()
-	datas = get_data.get_col_value(4,5)
+	# datas = get_data.get_col_value(1,3)
 	#datas = get_data.write_value(7,'test')
 	#datas = get_data.get_lines()
-	print(datas)
-
+	# print(datas)
+	# print(type(datas))
+	# print(get_data.nrows)
+	# print(get_data.ncols)
+	data_list = []
+	for i in range(1,get_data.nrows):
+		data = get_data.get_col_value(i,1)
+		data_list.append(data)
+	print(data_list)
 
