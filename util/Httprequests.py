@@ -19,7 +19,7 @@ class myrequests:
 	def mypost(self,param):
 		try:
 			data = json.dumps(param)
-			r = requests.post(self.url,data,headers=self.header)
+			r = requests.post(self.url,data=data,headers=self.header)
 			json_response = json.loads(r.text)
 			return json_response
 		except Exception as e:
