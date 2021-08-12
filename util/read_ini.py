@@ -1,6 +1,9 @@
 import configparser
 
 class ReadIni:
+    """
+    读取.ini类型的配置文件
+    """
 
     def __init__(self,file_name,node):
         self.cf = self.load_ini(file_name)
@@ -14,12 +17,4 @@ class ReadIni:
     def get_value(self,element_name):
         element = self.cf.get(self.node,element_name)
         return element
-
-if __name__ == '__main__':
-    file_name = 'D:\\Imooc_selenium\\config\\LocalElement.ini'
-    read_obj = ReadIni(file_name,'RegisterElement')
-    a = read_obj.get_value('shop_name')
-    print(a)
-    print(type(a))
-
 

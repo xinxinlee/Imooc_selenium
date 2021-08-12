@@ -5,15 +5,18 @@ import time
 #供case 的assert 判断用例执行是否成功
 #这里调用了handle层的方法，主要就是操作页面元素后send_keys 这个步骤，这里不需要driver
 class RegisterBusiness:
+    """
+    对应页面的业务操作和断言功能
+    """
 
-    def __init__(self,driver):
-        self.register_h = RegisterHandle(driver)
+    def __init__(self,driver,ini_path,node):
+        self.register_h = RegisterHandle(driver,ini_path,node)
 
     def user_base(self,shopname,username,password,code):
         self.register_h.send_shopname(shopname)
         self.register_h.send_username(username)
         self.register_h.send_password(password)
-        self.register_h.seng_code(code)
+        self.register_h.send_code(code)
         self.register_h.click_button()
 
     def login(self,shopname,username,password,code):

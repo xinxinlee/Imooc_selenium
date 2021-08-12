@@ -14,12 +14,14 @@ class FirstCase(unittest.TestCase):
         self.driver.get('http://scm.gyl.test.9now.net/login.html')
         self.driver.maximize_window()
         sleep(3)
-        self.login = RegisterBusiness(self.driver)
+        ini_path = "D:\\PycharmProjects\\Imooc_selenium\\config\\LocalElement.ini"
+        node = "RegisterElement"
+        self.login = RegisterBusiness(self.driver,ini_path,node)
 
     def tearDown(self):
         #截图处理代码每次用例执行完毕后会在收尾处进行截图
         case_name = self._testMethodName#用例的名字
-        self.driver.save_screenshot('D:\\Imooc_selenium\\Image\\%s.png' % case_name)
+        self.driver.save_screenshot('D:\\PycharmProjects\\Imooc_selenium\\Image\\%s.png' % case_name)
         self.driver.close()
 
     # 如果用户名输入错误的时候的用例,直接把参数传给login方法，不需要传给test函数
@@ -35,3 +37,6 @@ class FirstCase(unittest.TestCase):
     def test_3_login_erroeshopname(self):
         res = self.login.login('9999','admin','123456','8888')
         return res
+
+if __name__ == '__main__':
+    unittest.main()

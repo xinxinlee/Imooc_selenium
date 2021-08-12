@@ -5,6 +5,8 @@
     <title>this is first report</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     
 <style type="text/css" media="screen">
 body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
@@ -189,19 +191,19 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>this is first report</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-09-22 14:08:50</p>
-<p class='attribute'><strong>耗时:</strong> 0:01:01.238000</p>
-<p class='attribute'><strong>结果:</strong> Pass 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-06-09 14:17:25</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>这是第一个测试报告</p>
 </div>
 
 
 
-<p id='show_detail_line'>显示
-<a href='javascript:showCase(0)'>总数</a>
-<a href='javascript:showCase(1)'>失败</a>
-<a href='javascript:showCase(2)'>所有</a>
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)' class="btn btn-xs btn-primary">Summary</a>
+<a href='javascript:showCase(1)' class="btn btn-xs btn-danger">Failed</a>
+<a href='javascript:showCase(2)' class="btn btn-xs btn-info">All</a>
 </p>
 <table id='result_table'>
 <colgroup>
@@ -213,87 +215,53 @@ function showOutput(id, name) {
 <col align='right' />
 </colgroup>
 <tr id='header_row'>
-    <td>测试组/测试用例</td>
-    <td>数量</td>
-    <td>通过</td>
-    <td>失败</td>
-    <td>错误</td>
-    <td>查看</td>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>first_ddt.FirstDdtCase</td>
-    <td>3</td>
-    <td>3</td>
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_1__99999___admin___123456__8888_</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>first1_ddt</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 
+ft1.1: ImportError: Failed to import test module: first1_ddt
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python39\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\Programs\Python\Python39\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\PycharmProjects\Imooc_selenium\case\first1_ddt.py", line 10, in &lt;module&gt;
+    exc = ExcelDate(data_path,sheetname)
+  File "D:\PycharmProjects\Imooc_selenium\util\Excelreader.py", line 19, in __init__
+    self.data = xlrd.open_workbook(self.data_path)
+  File "D:\Programs\Python\Python39\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Imooc_selenium\\config\\case.xlsx'
 
-        </pre>
-    </div>
-    <!--css div popup end-->
 
-    </td>
-</tr>
-
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_2_________________</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
-
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_3__9999___admin___123456__8888_</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
-
-    <div id='div_pt1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.3: 
 
         </pre>
     </div>
@@ -303,11 +271,11 @@ pt1.3:
 </tr>
 
 <tr id='total_row'>
-    <td>总共</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0</td>
-    <td>0</td>
+    <td>Total</td>
+    <td>1</td>
+    <td class="text text-success">0</td>
+    <td class="text text-danger">0</td>
+    <td class="text text-warning">1</td>
     <td>&nbsp;</td>
 </tr>
 </table>
