@@ -7,7 +7,7 @@ class Caigoudan:
     def __init__(self):
         warnings.simplefilter('ignore',ResourceWarning)
         self.driver = webdriver.Chrome()
-        self.driver.get('http://scm.gyl.test.9now.net/login.html')
+        self.driver.get('http://host/login.html')
         self.driver.maximize_window()
         sleep(3)
         self.login = RegisterBusiness(self.driver)
