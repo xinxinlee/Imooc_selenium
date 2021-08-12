@@ -19,7 +19,7 @@ class FirstDdtCase(unittest.TestCase):
     def setUp(self):
         warnings.simplefilter('ignore',ResourceWarning)
         self.driver = webdriver.Chrome()
-        self.driver.get('http://scm.gyl.test.9now.net/login.html')
+        self.driver.get('http://host/login.html')
         self.driver.maximize_window()
         self.logger.info("chrome is openning")
         sleep(3)
